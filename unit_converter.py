@@ -69,3 +69,12 @@ elif category == 'Temperature':
     value = st.number_input("Enter Value:", value = 0.0)
     result = convert_temp(value, from_unit, to_unit)
     st.success(f"{value} {from_unit} = {result: .2f} {to_unit}")
+    st.markdown(
+    """
+    <hr style="margin-top: 50px;">
+    <div style='text-align: center; font-size: 14px; color: gray;'>
+        Created by Muhammad Hussain
+    </div>
+    """,
+    unsafe_allow_html=True
+)
